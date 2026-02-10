@@ -9,9 +9,12 @@ import com.github.chibyhq.playar.model.QPlaylist;
 import com.github.chibyhq.playar.model.User;
 import com.querydsl.core.types.Predicate;
 
+import org.springframework.context.annotation.Lazy;
+
 public class PlaylistRepositoryImpl implements PlaylistRepositoryCustom {
 
 	@Autowired
+	@Lazy
 	PlaylistRepository repo;
 	
 	@Override

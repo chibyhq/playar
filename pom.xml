@@ -71,7 +71,7 @@
 	  <module>poms/boot-parent</module>
 	  <module>modules/model</module>
 	  <module>modules/repositories</module>
-	  <!--module>modules/store</module-->
+	  <module>modules/store</module>
 	  <module>modules/client</module>
 	</modules>
 </project>
