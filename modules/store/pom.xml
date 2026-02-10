@@ -16,6 +16,11 @@
 	<name>Playar :: Store</name>
 	<description>Provides a store for Chiby applications provides a control REST interface</description>
 
+	<properties>
+		<skipNativeBuild>false</skipNativeBuild>
+		<start-class>com.github.chibyhq.store.StoreApplication</start-class>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
