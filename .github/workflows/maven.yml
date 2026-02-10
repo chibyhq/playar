@@ -27,11 +27,11 @@ jobs:
         settings-path: ${{ github.workspace }}
 
     - name: Build with Maven
-      run: ./mvnw -qB package --file pom.xml
+      run: ./mvnw -q -B package --file pom.xml
 
     - name: Publish to GitHub Packages
       if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
-      run: ./mvnw -qB deploy -DskipTests
+      run: ./mvnw -q -B deploy -DskipTests
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
