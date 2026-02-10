@@ -15,7 +15,7 @@ import com.github.chibyhq.store.model.repositories.PlaylistRepository;
 import com.github.chibyhq.store.model.repositories.UserRepository;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(properties = "spring.main.allow-bean-definition-overriding=true")
 @EnableMapRepositories
 public class StoreApplicationTest {
 
@@ -31,9 +31,9 @@ public class StoreApplicationTest {
 		
 		User john = userRepo.findOneByNickname("John");
 		
-		assertNotNull(playlistRepo.findOneByNameAndUser("default", john));
+		assertTrue(playlistRepo.findOneByNameAndUser("default", john).isPresent());
 		
-		assertNull(playlistRepo.findOneByNameAndUser("non-existent", john));
+		assertFalse(playlistRepo.findOneByNameAndUser("non-existent", john).isPresent());
 	}
 
 }

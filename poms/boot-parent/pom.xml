@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.github.chibyhq.playar</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>0.5.5-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../oss-parent</relativePath>
 	</parent>
 	
@@ -25,6 +25,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.graalvm.buildtools</groupId>
+                <artifactId>native-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.github.chibyhq.playar</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>0.5.5-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../../poms/oss-parent</relativePath>
 	</parent>
 	
@@ -28,6 +28,7 @@
 		<dependency>
 			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-collections</artifactId>
+			<version>5.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
@@ -38,8 +39,8 @@
 			<artifactId>jackson-annotations</artifactId>
 		</dependency>
 		<dependency>
-		  <groupId>javax.annotation</groupId>
-		  <artifactId>javax.annotation-api</artifactId>
+		  <groupId>jakarta.annotation</groupId>
+		  <artifactId>jakarta.annotation-api</artifactId>
 		</dependency>
 	</dependencies>
 
